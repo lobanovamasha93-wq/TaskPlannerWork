@@ -15,7 +15,7 @@ public class TasksTest {
     @Test
     public void shouldNotMatchSimpleTaskIncorrectQuery() {
         SimpleTask simpleTask = new SimpleTask(1, "Купить хлеб");
-        boolean matches = simpleTask.matches("молоко");
+        boolean matches = simpleTask.matches("Молоко");
         Assertions.assertFalse(matches);
     }
 
